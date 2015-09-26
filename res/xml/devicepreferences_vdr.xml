@@ -17,7 +17,7 @@
       android:inputType="number"
       android:title="@string/settings_port"
       android:summary="@string/settings_port_summary"
-      android:defaultValue="2001"
+      android:defaultValue="6419"
       android:maxLength="7" />
     <EditTextPreference
       android:key="timeout"

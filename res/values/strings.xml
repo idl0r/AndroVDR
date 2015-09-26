@@ -117,7 +117,7 @@
     <string name="settings_host">Host</string>
     <string name="settings_host_summary">Hostname or IP address (recommended). Must be enabled in svdrphosts.conf.</string>
     <string name="settings_port">Port</string>
-    <string name="settings_port_summary">SVDRP-Port (since 1.7.15 6419).</string>
+    <string name="settings_port_summary">SVDRP-Port (before 1.7.15 2001).</string>
     <string name="settings_macaddress">MAC-Address</string>
     <string name="settings_macaddress_summary">Required for WakeOnLan. Format 00:00:00:00:00:00</string>
     <string name="settings_broadcastaddress">Broadcast-Address</string>
