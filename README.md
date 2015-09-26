@@ -1,6 +1,6 @@
 # AndroVDR - A remote control for VDR #
 
-![http://androvdr.googlecode.com/hg/Documentation/logo.png](http://androvdr.googlecode.com/hg/Documentation/logo.png)![http://chart.googleapis.com/chart?cht=qr&chs=100x100&chl=market://search?q=pname:de.androvdr&amp;.png](http://chart.googleapis.com/chart?cht=qr&chs=100x100&chl=market://search?q=pname:de.androvdr&amp;.png)
+![https://raw.githubusercontent.com/idl0r/AndroVDR/master/Documentation/logo.png](https://raw.githubusercontent.com/idl0r/AndroVDR/master/Documentation/logo.png)![http://chart.googleapis.com/chart?cht=qr&chs=100x100&chl=market://search?q=pname:de.androvdr&amp;.png](http://chart.googleapis.com/chart?cht=qr&chs=100x100&chl=market://search?q=pname:de.androvdr&amp;.png)
 
 AndroVDR is an Android application to control the Linux based [VDR](http://tvdr.de).
 
