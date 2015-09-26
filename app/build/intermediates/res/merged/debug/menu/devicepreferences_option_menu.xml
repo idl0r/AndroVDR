@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <item 
+    android:id="@+id/devpref_sshkey_delete"
+    android:title="@string/settings_sshkey_delete"
+    android:icon="@drawable/ic_menu_close_clear_cancel" />
+</menu>
+<!-- From: file:/home/idl0r/AndroidStudioProjects/androvdr/app/src/main/res/menu/devicepreferences_option_menu.xml -->
