@@ -5,3 +5,10 @@
 .DS_Store
 /build
 /captures
+/AndroVDR/build/
+!/ViewPagerIndicator/
+/ViewPagerIndicator/*
+!/ViewPagerIndicator/ViewPagerIndicator.iml
+!/svdrp4j/
+/svdrp4j/*
+!/svdrp4j/svdrp4j.iml

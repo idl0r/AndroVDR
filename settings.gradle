@@ -1,1 +1,2 @@
-include ':app'
+include ':AndroVDR', 'svdrp4j'
+include ':ViewPagerIndicator'
