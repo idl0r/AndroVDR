@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item 
-    android:id="@+id/epgs_search"
-    android:title="@string/search"
-    android:icon="@drawable/ic_menu_search" />
-</menu><!-- From: file:/home/idl0r/AndroidStudioProjects/androvdr/app/src/main/res/menu/epgs_option_menu.xml -->

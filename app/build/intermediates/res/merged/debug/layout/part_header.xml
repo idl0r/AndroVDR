@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/header_text"
-    style="?header"
-    android:padding="4dip" />
-<!-- From: file:/home/idl0r/AndroidStudioProjects/androvdr/app/src/main/res/layout/part_header.xml -->

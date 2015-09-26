@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
- 	xmlns:android="http://schemas.android.com/apk/res/android">
-	<item 
-		android:title="@string/record"
-		android:id="@+id/epgs_record"/>
-</menu><!-- From: file:/home/idl0r/AndroidStudioProjects/androvdr/app/src/main/res/menu/epgs_menu.xml -->
