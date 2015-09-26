@@ -61,7 +61,7 @@
       android:key="characterset"
       android:title="@string/settings_characterset"
       android:summary="@string/settings_characterset_summary"
-      android:defaultValue="ISO-8859-1" />
+      android:defaultValue="UTF-8" />
   </PreferenceCategory>
   <PreferenceCategory
     android:title="@string/settings_timer">
