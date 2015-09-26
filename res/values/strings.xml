@@ -79,6 +79,8 @@
     <string name="settings_keyguard_summary">Disable the Keyguard (lock screen).</string>
     <string name="settings_swipetofinish">Swipe</string>
     <string name="settings_swipetofinish_summary">Swipe right behaves like Back-Key.</string>
+    <string name="settings_keepschedule">Keep window after switch</string>
+    <string name="settings_keepschedule_summary">Don\'t close the channel/schedule window after switching to the channel</string>
     <string name="settings_volume">Volume Control</string>
     <string name="settings_volume_vdr">VDR</string>
     <string name="settings_volume_vdr_summary">Use the phone volume keys to control VDR volume.</string>

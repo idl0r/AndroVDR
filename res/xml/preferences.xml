@@ -34,6 +34,11 @@
       android:title="@string/settings_swipetofinish"
       android:summary="@string/settings_swipetofinish_summary"
       android:defaultValue="false" />
+    <CheckBoxPreference
+      android:key="keepActivityonChannelSwitch"
+      android:title="@string/settings_keepschedule"
+      android:summary="@string/settings_keepschedule_summary"
+      android:defaultValue="false" />
   </PreferenceCategory>
   <PreferenceCategory
     android:key="category_volume"

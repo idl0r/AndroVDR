@@ -580,7 +580,11 @@ public class ChannelController extends AbstractController implements Runnable {
 		    if(result.getCode() == 250) {
 		    	Devices devices = Devices.getInstance();
 		    	devices.updateChannelSensor();
-		    	mActivity.finish();
+				SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(mActivity);
+				boolean keepactivity = sp.getBoolean("keepActivityonChannelSwitch", false);
+				if(!keepactivity) {
+					mActivity.finish();
+				}
 		    } else {
 		        logger.error("Couldn't switch channel: {}", result.getCode() + " - " + result.getMessage());
 		        
