@@ -66,7 +66,6 @@ public class EpgsdataFragment extends AbstractListFragment implements
 			mChannelNumber = 0;
 			mMaxItems = Preferences.getVdr().epgmax;
 		}
-	    mView = (LinearLayout) mActivity.findViewById(R.id.epgsdata_main);
 
 		/*
 		 * setTheme doesn't change background color :(
@@ -118,7 +117,9 @@ public class EpgsdataFragment extends AbstractListFragment implements
 				TypedValue.COMPLEX_UNIT_DIP,
 				(tv.getTextSize() / getResources().getDisplayMetrics().scaledDensity)
 						+ Preferences.textSizeOffset);
-		
+
+		mView = (LinearLayout) root.findViewById(R.id.epgsdata_main);
+
 		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 			registerForContextMenu(root.findViewById(android.R.id.list));
 		return root;
