@@ -55,11 +55,11 @@ public class AboutActivity extends AbstractActivity {
 			tv.setText("Version " + version);
 			
 			tv = (TextView) findViewById(R.id.about_url);
-			tv.setText(Html.fromHtml("Project page at <a href=\"http://code.google.com/p/androvdr\">Google Code</a>."));
+			tv.setText(Html.fromHtml("Project page at <a href=\"https://github.com/idl0r/androvdr\">GitHub</a>."));
 			tv.setMovementMethod(LinkMovementMethod.getInstance());
 
 			tv = (TextView) findViewById(R.id.about_wiki);
-			tv.setText(Html.fromHtml("<a href=\"http://code.google.com/p/androvdr/wiki/Documentation\">Documentation</a>"));
+			tv.setText(Html.fromHtml("<a href=\"https://github.com/idl0r/AndroVDR/wiki\">Wiki</a>"));
 			tv.setMovementMethod(LinkMovementMethod.getInstance());
 		} catch (NameNotFoundException e) {
 			logger.error("Couldn't read version name");
