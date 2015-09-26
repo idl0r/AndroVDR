@@ -156,7 +156,7 @@ public class Epgs {
 		} else if (response.getCode() == 550) {
 			throw new NoScheduleException();
 		} else {
-			throw new IOException(response.getCode() + " - " + response.getMessage().replaceAll("\n$", ""));
+			throw new IOException("cmd=\"" + cmd + "\" - " + response.getCode() + " - " + response.getMessage().replaceAll("\n$", ""));
 		}
 		
 		for (int i = 0; i < result.size(); i++)
