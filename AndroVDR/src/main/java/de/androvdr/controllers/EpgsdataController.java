@@ -252,8 +252,7 @@ public class EpgsdataController extends AbstractController implements Runnable {
 
 		listView.setAdapter(adapter);
 		listView.setOnItemClickListener(getOnItemClickListener());
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH)
-			listView.setOnItemLongClickListener(getOnItemLongClickListener());
+		listView.setOnItemLongClickListener(getOnItemLongClickListener());
 		listView.setSelected(true);
 		listView.setSelection(0);
 	}

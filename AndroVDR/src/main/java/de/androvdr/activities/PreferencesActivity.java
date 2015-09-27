@@ -63,11 +63,7 @@ public class PreferencesActivity extends PreferenceActivity implements OnSharedP
 		super.onCreate(savedInstanceState);
 		
 		Preferences.init(false);
-		if (Preferences.blackOnWhite && Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB) {
-			setTheme(R.style.Theme_Light);
-			getListView().setCacheColorHint(Color.TRANSPARENT);
-			getWindow().setBackgroundDrawable(getResources().getDrawable(android.R.drawable.screen_background_light));
-		}
+
 		ActionBarHelper.setHomeButtonEnabled(this, true);
 		
 		addPreferencesFromResource(R.xml.preferences);

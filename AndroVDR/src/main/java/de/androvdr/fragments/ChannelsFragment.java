@@ -144,9 +144,7 @@ public class ChannelsFragment extends AbstractListFragment implements
 	    if (tv != null)
 			tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP,	(tv.getTextSize() / sd) 
 					+ Preferences.textSizeOffset);
-	    
-	    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH)
-	    	registerForContextMenu(root.findViewById(android.R.id.list));
+
 		return root;
 	}
 

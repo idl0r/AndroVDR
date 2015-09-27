@@ -309,8 +309,7 @@ public class ChannelController extends AbstractController implements Runnable {
 		mChannelAdapter = adapter;
 		listView.setAdapter(adapter);
 		listView.setOnItemClickListener(getOnItemClickListener());
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH)
-			listView.setOnItemLongClickListener(getOnItemLongClickListener());
+		listView.setOnItemLongClickListener(getOnItemLongClickListener());
 		listView.setSelected(true);
 		listView.setSelection(0);
 		if (! Preferences.useInternet && (mChannelAdapter.getCount() > 0) && (mSearchTime == 0))
@@ -582,6 +581,7 @@ public class ChannelController extends AbstractController implements Runnable {
 		    	devices.updateChannelSensor();
 				SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(mActivity);
 				boolean keepactivity = sp.getBoolean("keepActivityonChannelSwitch", false);
+				// TODO: Update EPG/Channel after switching
 				if(!keepactivity) {
 					mActivity.finish();
 				}

@@ -280,10 +280,7 @@ public class AndroVDR extends AbstractFragmentActivity implements OnChangeListen
 		mConfigurationManager = ConfigurationManager.getInstance(this);
 		mConfigurationManager.disableKeyguard();
 
-		if (Build.VERSION.SDK_INT < 14)
-			mTitle = getTitle().toString();
-		else
-			mTitle = "";
+		mTitle = "";
         mTitleChannelName = "";
         
 		mDevices.setParentActivity(this);
@@ -530,14 +527,7 @@ public class AndroVDR extends AbstractFragmentActivity implements OnChangeListen
 	public void updateTitle() {
 		String title;
 		
-		if (Build.VERSION.SDK_INT < 11) {
-			if (mTitleChannelName.length() == 0 )
-				title = mTitle;
-			else 
-				title = mTitle + " - " + mTitleChannelName;
-		} else {
-			title = mTitleChannelName;
-		}
+		title = mTitleChannelName;
 		
     	if (! isFinishing())
     		setTitle(title);

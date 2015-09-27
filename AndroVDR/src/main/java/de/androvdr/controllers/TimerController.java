@@ -245,8 +245,7 @@ public class TimerController extends AbstractController implements Runnable {
 	private void setTimerAdapter(TimerAdapter adapter, ListView listView) {
 		listView.setAdapter(adapter);
 		listView.setOnItemClickListener(getOnItemClickListener());
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH)
-			listView.setOnItemLongClickListener(getOnItemLongClickListener());
+		listView.setOnItemLongClickListener(getOnItemLongClickListener());
 		listView.setSelected(true);
 		listView.setSelection(0);
 	}

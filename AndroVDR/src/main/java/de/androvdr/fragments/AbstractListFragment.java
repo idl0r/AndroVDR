@@ -83,8 +83,7 @@ public class AbstractListFragment extends ListFragment {
 		if (savedInstanceState != null)
 			mCurrentItemIndex = savedInstanceState.getInt("currentitemindex");
 		
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
-			getListView().setFastScrollEnabled(true);
+		getListView().setFastScrollEnabled(true);
 	}
 	
 	@Override

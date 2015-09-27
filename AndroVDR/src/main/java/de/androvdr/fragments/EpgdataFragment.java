@@ -71,8 +71,7 @@ public class EpgdataFragment extends AbstractFragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View root = inflater.inflate(R.layout.epgdata_fragment, container, false);
-		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH)
-			registerForContextMenu(root.findViewById(R.id.pgi_layout_content));
+
 		return root;
 	}
 	

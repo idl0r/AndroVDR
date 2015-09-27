@@ -109,9 +109,6 @@ public class DevicesActivity extends AbstractListActivity {
 		super.onCreate(savedInstanceState);
 			
 		setContentView(R.layout.devices);
-		
-		if (Preferences.blackOnWhite && Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB)
-			getListView().setBackgroundColor(Color.WHITE);
 
 		mDevices = Devices.getInstance();
 		if (! mDevices.hasPlugins()) {

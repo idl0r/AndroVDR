@@ -94,11 +94,7 @@ public class DevicePreferencesActivity extends PreferenceActivity implements OnS
 		super.onCreate(savedInstanceState);
 		
 		Preferences.init(false);
-		if (Preferences.blackOnWhite && Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB) {
-			setTheme(R.style.Theme_Light);
-			getListView().setCacheColorHint(Color.TRANSPARENT);
-			getWindow().setBackgroundDrawable(getResources().getDrawable(android.R.drawable.screen_background_light));
-		}
+
 		ActionBarHelper.setHomeButtonEnabled(this, true);
 		
 		mId = getIntent().getExtras().getInt("deviceid", -1);
