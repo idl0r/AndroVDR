@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/AndroVDR.iml" filepath="$PROJECT_DIR$/app/AndroVDR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroVDR/AndroVDR.iml" filepath="$PROJECT_DIR$/AndroVDR/AndroVDR.iml" />
       <module fileurl="file://$PROJECT_DIR$/ViewPagerIndicator/ViewPagerIndicator.iml" filepath="$PROJECT_DIR$/ViewPagerIndicator/ViewPagerIndicator.iml" />
       <module fileurl="file://$PROJECT_DIR$/androvdr.iml" filepath="$PROJECT_DIR$/androvdr.iml" />
       <module fileurl="file://$PROJECT_DIR$/svdrp4j/svdrp4j.iml" filepath="$PROJECT_DIR$/svdrp4j/svdrp4j.iml" />
