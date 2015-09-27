@@ -115,7 +115,7 @@
     <string name="settings_recordingindex_summary">Aufnahmeindex bei der nächsten Benutzung neu erzeugen.</string>
     <string name="settings_name">Name</string>
     <string name="settings_host">Host</string>
-    <string name="settings_host_summary">Hostname oder IP-Addresse (empfohlen). Muss in svdrphosts.conf freigegeben werden.</string>
+    <string name="settings_host_summary">Hostname oder IP-Adresse (empfohlen). Muss in svdrphosts.conf freigegeben werden.</string>
     <string name="settings_port">Port</string>
     <string name="settings_port_summary">SVDRP-Port (bevor 1.7.15 2001).</string>
     <string name="settings_macaddress">MAC-Adresse</string>
@@ -139,7 +139,7 @@
     <string name="settings_margin_start">Vorlauf Beginn (Min.)</string>
     <string name="settings_margin_stop">Nachlauf Ende (Min.)</string>
     <string name="settings_remote">Remote</string>
-    <string name="settings_remote_host_summary">Öffentlicher Hostname oder IP-Addresse des Routers.</string>
+    <string name="settings_remote_host_summary">Öffentlicher Hostname oder IP-Adresse des Routers.</string>
     <string name="settings_remote_port">SSH-Port</string>
     <string name="settings_remote_port_summary">Offener Port auf dem Router (Forwarding konfiguriert ?).</string>
     <string name="settings_user">Benutzer</string>

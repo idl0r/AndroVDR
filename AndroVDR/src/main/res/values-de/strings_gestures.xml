@@ -38,7 +38,7 @@
     <!-- Gestures -->
     <skip />
     <!-- Label, tell the user to enter a gesture -->
-    <string name="prompt">Bitte hier die Geste fuer den VDR eingeben</string>
+    <string name="prompt">Bitte hier die Geste für den VDR eingeben</string>
     <!-- Label, displayed in menu  to start the activity for enter gestures -->
     <string name="gestures">mit Gesten steuern</string>
     <!-- Label, prompt asking the user to enter the name of the gesture -->
