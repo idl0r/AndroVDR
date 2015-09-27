@@ -20,10 +20,10 @@
 
 package de.androvdr;
 
-import java.util.ArrayList;
-
 import android.os.Parcel;
 import android.os.Parcelable;
+
+import java.util.ArrayList;
 
 public class RecordingViewItem implements Parcelable {
 	public static final Parcelable.Creator<RecordingViewItem> CREATOR = new Parcelable.Creator<RecordingViewItem>() {
@@ -46,7 +46,7 @@ public class RecordingViewItem implements Parcelable {
 		this.isFolder = false;
 		this.title = recording.title;
 		this.recording = recording;
-	};
+	}
 
 	public RecordingViewItem(String folderName) {
 		this.isFolder = true;

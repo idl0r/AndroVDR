@@ -20,9 +20,6 @@
 
 package de.androvdr.activities;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -30,6 +27,10 @@ import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import de.androvdr.Preferences;
 import de.androvdr.R;
 

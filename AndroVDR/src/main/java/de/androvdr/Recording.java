@@ -20,14 +20,14 @@
 
 package de.androvdr;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Parcel;
 import android.os.Parcelable;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 
 public class Recording implements Parcelable, Comparable<Recording> {
 
@@ -56,8 +56,8 @@ public class Recording implements Parcelable, Comparable<Recording> {
 	public ArrayList<String> folders = new ArrayList<String>();
 	public String fullTitle;
 	
-	public Recording() {};
-	
+	public Recording() {}
+
 	public Recording(String vdrrecordinginfo) throws Exception {
 		id = MD5.calculate(vdrrecordinginfo.substring(vdrrecordinginfo.indexOf(" ")).replace("*", " "));
 		parse(vdrrecordinginfo);

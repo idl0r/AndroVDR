@@ -20,16 +20,17 @@
 
 package de.androvdr.devices;
 
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
+
+import org.hampelratte.svdrp.Command;
+import org.hampelratte.svdrp.Response;
+
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.HashSet;
 import java.util.Hashtable;
 
-import org.hampelratte.svdrp.Command;
-import org.hampelratte.svdrp.Response;
-
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import de.androvdr.Channels;
 import de.androvdr.EventListenerList;
 import de.androvdr.Preferences;
@@ -298,7 +299,7 @@ public class VdrDevice implements IActuator, ISensor, OnSharedPreferenceChangeLi
 				@Override
 				public void run() {
 					VDRConnection.close();
-				};
+				}
 			};
 			thread.start();
 		}
@@ -307,7 +308,7 @@ public class VdrDevice implements IActuator, ISensor, OnSharedPreferenceChangeLi
 	@Override
 	public String read(String command) {
 
-		final String vdrsensor = (String) mSensors.get(command);
+		final String vdrsensor = mSensors.get(command);
 		if (vdrsensor == null) {
 			mLastError = "Unknown command: " + command;
 			return null;
@@ -389,9 +390,9 @@ public class VdrDevice implements IActuator, ISensor, OnSharedPreferenceChangeLi
 			return true;
 		}
 		
-		vdrcommand = (String) mCommands.get(command);
+		vdrcommand = mCommands.get(command);
 		if (vdrcommand == null)
-			vdrcommand = (String) mCommandsCompat.get(command);
+			vdrcommand = mCommandsCompat.get(command);
 		
 		if (vdrcommand == null) {
 			mLastError = "Unknown command: " + command;

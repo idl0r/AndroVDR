@@ -23,5 +23,5 @@ package de.androvdr.devices;
 import java.util.EventListener;
 
 public interface OnChannelChangedListener extends EventListener {
-	public abstract void onChannelChanged();
+	void onChannelChanged();
 }

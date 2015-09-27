@@ -20,6 +20,27 @@
 
 package de.androvdr.activities;
 
+import android.app.AlertDialog;
+import android.content.ContentValues;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
+import android.database.Cursor;
+import android.os.Bundle;
+import android.os.Environment;
+import android.preference.ListPreference;
+import android.preference.Preference;
+import android.preference.Preference.OnPreferenceClickListener;
+import android.preference.PreferenceActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -30,31 +51,9 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.Map.Entry;
+import java.util.Set;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import android.app.AlertDialog;
-import android.content.ContentValues;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
-import android.database.Cursor;
-import android.graphics.Color;
-import android.os.Build;
-import android.os.Bundle;
-import android.os.Environment;
-import android.preference.ListPreference;
-import android.preference.Preference;
-import android.preference.PreferenceActivity;
-import android.preference.Preference.OnPreferenceClickListener;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.widget.Toast;
 import de.androvdr.ActionBarHelper;
 import de.androvdr.DevicesTable;
 import de.androvdr.ListPreferenceValueHolder;
@@ -137,7 +136,7 @@ public class DevicePreferencesActivity extends PreferenceActivity implements OnS
 				}).start();
 			}
 			
-			Preference sshkey = (Preference) findPreference("sshkey_pref");
+			Preference sshkey = findPreference("sshkey_pref");
 			sshkey.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 				
 				@Override

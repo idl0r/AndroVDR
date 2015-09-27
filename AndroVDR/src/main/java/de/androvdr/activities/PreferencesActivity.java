@@ -20,13 +20,9 @@
 
 package de.androvdr.activities;
 
-import java.util.List;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
-import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
@@ -35,6 +31,9 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceManager;
 import android.view.MenuItem;
+
+import java.util.List;
+
 import de.androvdr.ActionBarHelper;
 import de.androvdr.ListPreferenceValueHolder;
 import de.androvdr.Preferences;

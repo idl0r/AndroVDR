@@ -20,20 +20,9 @@
 
 package de.androvdr.controllers;
 
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-
-import org.hampelratte.svdrp.Response;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
 import android.view.ActionMode;
@@ -52,6 +41,17 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.hampelratte.svdrp.Response;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
 import de.androvdr.AbstractViewHolder;
 import de.androvdr.ActionModeHelper;
 import de.androvdr.Channel;
@@ -74,7 +74,7 @@ public class EpgsdataController extends AbstractController implements Runnable {
 	public static final int EPGSDATA_ACTION_PROGRAMINFO = 2;
 	
 	public interface OnEpgdataSelectedListener {
-		public boolean OnItemSelected(int position, Channel channel);
+		boolean OnItemSelected(int position, Channel channel);
 	}
 
 	private ActionMode mActionMode;

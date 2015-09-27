@@ -22,27 +22,27 @@ package de.androvdr.devices;
 
 
 public interface IDevice {
-	public String getDisplayClassName();
+	String getDisplayClassName();
 	
-	public long getId();
-	public void setId(long id);
+	long getId();
+	void setId(long id);
 	
-	public String getName();
-	public void setName(String name);
+	String getName();
+	void setName(String name);
 
-	public String getIP();
-	public void setIP(String ip);
+	String getIP();
+	void setIP(String ip);
 
-	public int getPort();
-	public void setPort(int port);
+	int getPort();
+	void setPort(int port);
 
-	public String getUser();
-	public void setUser(String user);
+	String getUser();
+	void setUser(String user);
 
-	public String getPassword();
-	public void setPassword(String password);
+	String getPassword();
+	void setPassword(String password);
 
-	public String getLastError();
+	String getLastError();
 
-	public void disconnect();
+	void disconnect();
 }

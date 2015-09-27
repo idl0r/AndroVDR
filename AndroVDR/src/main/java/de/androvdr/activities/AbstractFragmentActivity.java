@@ -20,14 +20,10 @@
 
 package de.androvdr.activities;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -38,6 +34,10 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager.BadTokenException;
 import android.widget.Toast;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import de.androvdr.ActionBarHelper;
 import de.androvdr.ConfigurationManager;
 import de.androvdr.Messages;

@@ -20,28 +20,28 @@
 
 package de.androvdr.fragments;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentTransaction;
 import android.util.TypedValue;
 import android.view.ContextMenu;
+import android.view.ContextMenu.ContextMenuInfo;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ContextMenu.ContextMenuInfo;
+import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.AdapterView.AdapterContextMenuInfo;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import de.androvdr.Channel;
 import de.androvdr.Preferences;
 import de.androvdr.R;

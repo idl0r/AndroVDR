@@ -20,28 +20,11 @@
 
 package de.androvdr.controllers;
 
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Date;
-import java.util.GregorianCalendar;
-
-import org.hampelratte.svdrp.Response;
-import org.hampelratte.svdrp.commands.CHAN;
-import org.hampelratte.svdrp.commands.DELT;
-import org.hampelratte.svdrp.commands.MODT;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
 import android.view.ActionMode;
@@ -59,6 +42,23 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.hampelratte.svdrp.Response;
+import org.hampelratte.svdrp.commands.CHAN;
+import org.hampelratte.svdrp.commands.DELT;
+import org.hampelratte.svdrp.commands.MODT;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 import de.androvdr.AbstractViewHolder;
 import de.androvdr.ActionModeHelper;
 import de.androvdr.Channel;
@@ -89,7 +89,7 @@ public class TimerController extends AbstractController implements Runnable {
 	public final static int TIMER_ACTION_SWITCH_CAHNNEL = 7;
 
 	public interface OnTimerSelectedListener {
-		public boolean OnTimerSelected(int position, Channel channel);
+		boolean OnTimerSelected(int position, Channel channel);
 	}
 	
 	private static transient Logger logger = LoggerFactory.getLogger(TimerController.class);

@@ -2,8 +2,8 @@ package de.androvdr;
 
 import android.app.Activity;
 import android.view.GestureDetector;
-import android.view.MotionEvent;
 import android.view.GestureDetector.SimpleOnGestureListener;
+import android.view.MotionEvent;
 
 public class SimpleGestureFilter extends SimpleOnGestureListener {
 
@@ -141,7 +141,6 @@ public class SimpleGestureFilter extends SimpleOnGestureListener {
 	@Override
 	public boolean onDoubleTap(MotionEvent arg0) {
 		this.listener.onDoubleTap();
-		;
 		return true;
 	}
 
@@ -162,7 +161,7 @@ public class SimpleGestureFilter extends SimpleOnGestureListener {
 		return false;
 	}
 
-	public static interface SimpleGestureListener {
+	public interface SimpleGestureListener {
 		void onSwipe(int direction);
 
 		void onDoubleTap();

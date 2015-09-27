@@ -1,5 +1,4 @@
 package de.androvdr;
-import java.io.File;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,6 +11,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.File;
+
 import de.androvdr.activities.AndroVDR;
 
 

@@ -20,11 +20,6 @@
 
 package de.androvdr;
 
-import java.io.File;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
@@ -32,6 +27,12 @@ import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Environment;
 import android.preference.PreferenceManager;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.File;
+
 import de.androvdr.devices.Devices;
 import de.androvdr.devices.VdrDevice;
 

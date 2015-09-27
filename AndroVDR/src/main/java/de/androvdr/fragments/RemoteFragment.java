@@ -1,8 +1,5 @@
 package de.androvdr.fragments;
 
-import java.io.File;
-import java.util.ArrayList;
-
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
@@ -19,6 +16,10 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
+
+import java.io.File;
+import java.util.ArrayList;
+
 import de.androvdr.ConfigurationManager;
 import de.androvdr.Dialogs;
 import de.androvdr.Preferences;
@@ -61,7 +62,7 @@ public class RemoteFragment extends AbstractFragment {
 					imageButton.setOnLongClickListener(getOnLongClickListener());
 				} else {
 					if (v.getChildAt(j) instanceof ViewGroup)
-						addClickListeners((ViewGroup) v.getChildAt(j));
+						addClickListeners(v.getChildAt(j));
 				}
 		}
 	}
@@ -215,7 +216,7 @@ public class RemoteFragment extends AbstractFragment {
 							TypedValue.COMPLEX_UNIT_SP, size);
 				} else {
 					if (v.getChildAt(j) instanceof ViewGroup)
-						setButtonsTextSize((ViewGroup) v.getChildAt(j), size);
+						setButtonsTextSize(v.getChildAt(j), size);
 				}
 		}
 		

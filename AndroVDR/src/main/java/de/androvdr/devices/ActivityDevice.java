@@ -20,11 +20,12 @@
 
 package de.androvdr.devices;
 
+import android.app.Activity;
+import android.content.Intent;
+
 import java.io.IOException;
 import java.util.ArrayList;
 
-import android.app.Activity;
-import android.content.Intent;
 import de.androvdr.Preferences;
 import de.androvdr.activities.ChannelsActivity;
 import de.androvdr.activities.EpgdataActivity;

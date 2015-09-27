@@ -20,11 +20,11 @@
 
 package de.androvdr.devices;
 
-import java.util.ArrayList;
-
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
+
+import java.util.ArrayList;
 
 public class MacroConfigHandler extends DefaultHandler {
 	private static final String MACRO = "macro";

@@ -20,9 +20,6 @@
 
 package de.androvdr.activities;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -34,6 +31,10 @@ import android.os.Message;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import de.androvdr.ActionBarHelper;
 import de.androvdr.ConfigurationManager;
 import de.androvdr.Messages;

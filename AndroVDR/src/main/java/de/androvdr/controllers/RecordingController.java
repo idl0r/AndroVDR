@@ -20,31 +20,12 @@
 
 package de.androvdr.controllers;
 
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.GregorianCalendar;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Set;
-import java.util.Stack;
-import java.util.concurrent.atomic.AtomicBoolean;
-
-import org.hampelratte.svdrp.Response;
-import org.hampelratte.svdrp.commands.DELR;
-import org.hampelratte.svdrp.commands.PLAY;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -68,6 +49,25 @@ import android.widget.RelativeLayout;
 import android.widget.SectionIndexer;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.hampelratte.svdrp.Response;
+import org.hampelratte.svdrp.commands.DELR;
+import org.hampelratte.svdrp.commands.PLAY;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.GregorianCalendar;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.Stack;
+import java.util.concurrent.atomic.AtomicBoolean;
+
 import de.androvdr.AbstractViewHolder;
 import de.androvdr.ActionModeHelper;
 import de.androvdr.DBHelper;
@@ -94,7 +94,7 @@ public class RecordingController extends AbstractController implements Runnable 
 	public static final int RECORDING_ACTION_KEY_BACK = 8;
 	
 	public interface OnRecordingSelectedListener {
-		public boolean OnItemSelected(int position, Recording recording);
+		boolean OnItemSelected(int position, Recording recording);
 	}
 	
 	private static transient Logger logger = LoggerFactory.getLogger(RecordingController.class);
@@ -165,7 +165,7 @@ public class RecordingController extends AbstractController implements Runnable 
 			// --- restore view items ---
 			mRecordingViewItems = new RecordingViewItemList();
 			for (int i = 0; i < recordings.length; i++) {
-				mRecordingViewItems.add((RecordingViewItem) recordings[i]);
+				mRecordingViewItems.add(recordings[i]);
 				// mRecordingViewItems.get(i).recording.db = db;
 			}
 			

@@ -20,19 +20,7 @@
 
 package de.androvdr.controllers;
 
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Formatter;
-import java.util.GregorianCalendar;
-
-import org.hampelratte.svdrp.Response;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Handler;
 import android.view.ActionMode;
 import android.view.Menu;
@@ -47,6 +35,18 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.hampelratte.svdrp.Response;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Formatter;
+import java.util.GregorianCalendar;
+
 import de.androvdr.ActionModeHelper;
 import de.androvdr.Channel;
 import de.androvdr.Channels;

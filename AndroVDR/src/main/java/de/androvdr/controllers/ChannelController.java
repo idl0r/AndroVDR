@@ -20,22 +20,11 @@
 
 package de.androvdr.controllers;
 
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.GregorianCalendar;
-
-import org.hampelratte.svdrp.Response;
-import org.hampelratte.svdrp.commands.CHAN;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
@@ -58,6 +47,17 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.hampelratte.svdrp.Response;
+import org.hampelratte.svdrp.commands.CHAN;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.GregorianCalendar;
+
 import de.androvdr.AbstractViewHolder;
 import de.androvdr.ActionModeHelper;
 import de.androvdr.Channel;
@@ -89,7 +89,7 @@ public class ChannelController extends AbstractController implements Runnable {
 	private static final int MSG_CURRENTCHANNEL_UPDATE = 10000;
 	
 	public interface OnChannelSelectedListener {
-		public boolean OnItemSelected(int position, Channel channel);
+		boolean OnItemSelected(int position, Channel channel);
 	}
 	
 	private ActionMode mActionMode;

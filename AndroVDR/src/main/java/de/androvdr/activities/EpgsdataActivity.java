@@ -22,6 +22,7 @@ package de.androvdr.activities;
 
 import android.os.Bundle;
 import android.view.View;
+
 import de.androvdr.Preferences;
 import de.androvdr.R;
 

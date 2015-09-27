@@ -1,17 +1,5 @@
 package de.androvdr.fragments;
 
-import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.GregorianCalendar;
-import java.util.List;
-
-import org.hampelratte.svdrp.Response;
-import org.hampelratte.svdrp.commands.LSTC;
-import org.hampelratte.svdrp.parsers.ChannelParser;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -23,6 +11,19 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import org.hampelratte.svdrp.Response;
+import org.hampelratte.svdrp.commands.LSTC;
+import org.hampelratte.svdrp.parsers.ChannelParser;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.GregorianCalendar;
+import java.util.List;
+
 import de.androvdr.Channel;
 import de.androvdr.Preferences;
 import de.androvdr.R;
@@ -53,7 +54,7 @@ public class RemoteTabletFragment extends RemoteFragment {
 				new ChannelViewUpdater().execute(result);
 				break;
 			}
-		};
+		}
 	};
 	
 	@Override

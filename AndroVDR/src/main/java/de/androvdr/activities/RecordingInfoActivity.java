@@ -21,6 +21,7 @@
 package de.androvdr.activities;
 
 import android.os.Bundle;
+
 import de.androvdr.fragments.RecordingInfoFragment;
 
 public class RecordingInfoActivity extends AbstractFragmentActivity {

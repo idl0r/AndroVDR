@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public interface ISensor extends IDevice {
 
-	public ArrayList<String> getSensors();
-	public String read(String command);
+	ArrayList<String> getSensors();
+	String read(String command);
 
 }

@@ -20,12 +20,6 @@
 
 package de.androvdr.activities;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import android.app.Dialog;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
@@ -38,6 +32,13 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TimePicker;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
 import de.androvdr.Preferences;
 import de.androvdr.R;
 import de.androvdr.controllers.ChannelController;

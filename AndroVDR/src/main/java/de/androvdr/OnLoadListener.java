@@ -21,5 +21,5 @@
 package de.androvdr;
 
 public interface OnLoadListener {
-	public void onLoad();
+	void onLoad();
 }

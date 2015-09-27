@@ -24,7 +24,7 @@ import java.util.ArrayList;
 
 public interface IActuator extends IDevice {
 	
-	public ArrayList<String> getCommands();
-	public boolean write(String command);
+	ArrayList<String> getCommands();
+	boolean write(String command);
 	
 }

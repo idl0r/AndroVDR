@@ -21,5 +21,5 @@
 package de.androvdr.devices;
 
 public interface OnChangeListener {
-	public abstract void onChange();
+	void onChange();
 }

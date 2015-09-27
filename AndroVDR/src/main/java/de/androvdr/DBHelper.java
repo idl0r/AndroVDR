@@ -20,12 +20,12 @@
 
 package de.androvdr;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class DBHelper extends SQLiteOpenHelper {
 	private static transient Logger logger = LoggerFactory.getLogger(DBHelper.class);

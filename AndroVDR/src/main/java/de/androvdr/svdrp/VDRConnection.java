@@ -1,15 +1,15 @@
 package de.androvdr.svdrp;
 
 
-import java.io.IOException;
-import java.util.TimerTask;
-
 import org.hampelratte.svdrp.Command;
 import org.hampelratte.svdrp.Connection;
 import org.hampelratte.svdrp.Response;
 import org.hampelratte.svdrp.Version;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.util.TimerTask;
 
 import de.androvdr.Preferences;
 import de.androvdr.Recording;

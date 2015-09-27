@@ -1,7 +1,6 @@
 package de.androvdr;
 
 import android.app.Activity;
-import android.os.Build;
 import android.support.v4.app.FragmentActivity;
 
 public class ActionBarHelper {

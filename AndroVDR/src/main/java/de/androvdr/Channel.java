@@ -20,16 +20,17 @@
 
 package de.androvdr;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.Environment;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.Environment;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+
 import de.androvdr.Epgs.NoScheduleException;
 
 public class Channel implements Comparable<Channel> {
@@ -42,7 +43,7 @@ public class Channel implements Comparable<Channel> {
 	public static final String logoDir = Preferences.getLogoDirName();
 	
 	public interface OnCurrentEpgChangedListener {
-		public void OnCurrentEpgChanged(Channel channel);
+		void OnCurrentEpgChanged(Channel channel);
 	}
 	
 	private OnCurrentEpgChangedListener mChangedListener;
@@ -158,7 +159,7 @@ public class Channel implements Comparable<Channel> {
 	}
 	
 	public void updateEpg(boolean next) throws IOException {
-		long systemTime = (long) System.currentTimeMillis() / 60000;
+		long systemTime = System.currentTimeMillis() / 60000;
 		if ((mLastEpgUpdate == 0)
 				|| (systemTime - mLastEpgUpdate >= EPG_UPDATE_PERIOD)) {
 			if (mNow.isEmpty

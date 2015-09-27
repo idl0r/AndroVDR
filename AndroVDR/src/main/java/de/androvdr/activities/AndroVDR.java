@@ -20,15 +20,6 @@
 
 package de.androvdr.activities;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.Notification;
@@ -63,8 +54,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.viewpagerindicator.CirclePageIndicator;
 import com.viewpagerindicator.LinePageIndicator;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import de.androvdr.Channel;
 import de.androvdr.Channels;
@@ -138,14 +137,14 @@ public class AndroVDR extends AbstractFragmentActivity implements OnChangeListen
 				new ChannelViewUpdater().execute(result);
 				break;
 			}
-		};
+		}
 	};
 	
 	private Handler mUpdateTitleHandler = new Handler() {
 		@Override
 		public void handleMessage(Message msg) {
 			updateTitle();
-		};
+		}
 	};
 	
 	private void initLogging(SharedPreferences sp) {

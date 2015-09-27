@@ -21,5 +21,5 @@
 package de.androvdr.devices;
 
 public interface OnSensorChangeListener {
-	public abstract void onChange(String result);
+	void onChange(String result);
 }

@@ -20,22 +20,22 @@
 
 package de.androvdr;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.StringTokenizer;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
+import android.database.sqlite.SQLiteStatement;
 
 import org.hampelratte.svdrp.Response;
 import org.hampelratte.svdrp.commands.LSTR;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.androvdr.svdrp.VDRConnection;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.StringTokenizer;
 
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
-import android.database.sqlite.SQLiteStatement;
+import de.androvdr.svdrp.VDRConnection;
 
 public class Recordings {
 	private static transient Logger logger = LoggerFactory.getLogger(Recordings.class);

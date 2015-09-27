@@ -24,19 +24,17 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
-import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.ContextMenu;
+import android.view.ContextMenu.ContextMenuInfo;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ContextMenu.ContextMenuInfo;
+import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
-import android.widget.AdapterView.AdapterContextMenuInfo;
+
 import de.androvdr.DevicesTable;
-import de.androvdr.Preferences;
 import de.androvdr.R;
 import de.androvdr.devices.Devices;
 
@@ -151,6 +149,6 @@ public class DevicesActivity extends AbstractListActivity {
 		final SimpleCursorAdapter adapter = new SimpleCursorAdapter(this,
 				R.layout.devices_item, cursor, VIEW_COLUMNS, VIEW_IDS);
 		setListAdapter(adapter);
-		registerForContextMenu((ListView) findViewById(android.R.id.list));
+		registerForContextMenu(findViewById(android.R.id.list));
 	}
 }

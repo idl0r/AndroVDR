@@ -26,6 +26,7 @@ import android.os.Message;
 import android.util.TypedValue;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import de.androvdr.Messages;
 import de.androvdr.Preferences;
 import de.androvdr.activities.AbstractFragmentActivity;

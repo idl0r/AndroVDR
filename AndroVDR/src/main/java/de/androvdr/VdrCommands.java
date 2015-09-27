@@ -20,11 +20,6 @@
 
 package de.androvdr;
 
-import java.io.IOException;
-import java.text.ParseException;
-import java.util.GregorianCalendar;
-import java.util.List;
-
 import org.hampelratte.svdrp.Response;
 import org.hampelratte.svdrp.commands.LSTR;
 import org.hampelratte.svdrp.commands.NEWT;
@@ -36,6 +31,11 @@ import org.hampelratte.svdrp.responses.highlevel.Stream;
 import org.hampelratte.svdrp.responses.highlevel.Timer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.text.ParseException;
+import java.util.GregorianCalendar;
+import java.util.List;
 
 import de.androvdr.svdrp.VDRConnection;
 

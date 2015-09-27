@@ -20,11 +20,10 @@
 
 package de.androvdr;
 
-import java.io.IOException;
-import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ListIterator;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
+import android.database.sqlite.SQLiteStatement;
 
 import org.hampelratte.svdrp.Response;
 import org.hampelratte.svdrp.commands.CHAN;
@@ -33,10 +32,12 @@ import org.hampelratte.svdrp.parsers.ChannelParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
-import android.database.sqlite.SQLiteStatement;
+import java.io.IOException;
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
+
 import de.androvdr.devices.VdrDevice;
 import de.androvdr.svdrp.VDRConnection;
 

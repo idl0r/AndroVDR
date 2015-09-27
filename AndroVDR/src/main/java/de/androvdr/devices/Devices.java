@@ -20,6 +20,22 @@
 
 package de.androvdr.devices;
 
+import android.app.Activity;
+import android.content.ContentValues;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.os.Environment;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import android.preference.PreferenceManager;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FilenameFilter;
@@ -37,21 +53,6 @@ import java.util.TimerTask;
 import java.util.jar.JarFile;
 import java.util.zip.ZipEntry;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import android.app.Activity;
-import android.content.ContentValues;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.os.Bundle;
-import android.os.Environment;
-import android.os.Handler;
-import android.os.Looper;
-import android.os.Message;
-import android.preference.PreferenceManager;
 import dalvik.system.DexClassLoader;
 import de.androvdr.AndroApplication;
 import de.androvdr.DBHelper;
@@ -268,8 +269,8 @@ public class Devices implements OnSharedPreferenceChangeListener, OnChannelChang
 		Enumeration<String> e = mDevices.keys();
 		while (e.hasMoreElements()) {
 			String key = e.nextElement();
-			IDevice idev = (IDevice) mDevices.get(key);
-			if ((idev instanceof IDevice) && (((IDevice) idev).getId() == id)) {
+			IDevice idev = mDevices.get(key);
+			if ((idev instanceof IDevice) && (idev.getId() == id)) {
 				device = (IActuator) idev;
 				break;
 			}
@@ -306,7 +307,7 @@ public class Devices implements OnSharedPreferenceChangeListener, OnChannelChang
 		Enumeration<String> e = mDevices.keys();
 		while (e.hasMoreElements()) {
 			String key = e.nextElement();
-			IActuator ac = (IActuator) mDevices.get(key);
+			IActuator ac = mDevices.get(key);
 			if (ac instanceof VdrDevice) {
 				vdr = (VdrDevice) ac;
 				break;
@@ -320,8 +321,8 @@ public class Devices implements OnSharedPreferenceChangeListener, OnChannelChang
 		Enumeration<String> e = mDevices.keys();
 		while (e.hasMoreElements()) {
 			String key = e.nextElement();
-			IActuator ac = (IActuator) mDevices.get(key);
-			if ((ac instanceof VdrDevice) && (((VdrDevice) ac).getId() == id)) {
+			IActuator ac = mDevices.get(key);
+			if ((ac instanceof VdrDevice) && (ac.getId() == id)) {
 				vdr = (VdrDevice) ac;
 				break;
 			}
@@ -334,7 +335,7 @@ public class Devices implements OnSharedPreferenceChangeListener, OnChannelChang
 		Enumeration<String> e = mDevices.keys();
 		while (e.hasMoreElements()) {
 			String key = e.nextElement();
-			IActuator ac = (IActuator) mDevices.get(key);
+			IActuator ac = mDevices.get(key);
 			if (ac instanceof VdrDevice) {
 				list.add((VdrDevice) ac);
 			}
@@ -347,7 +348,7 @@ public class Devices implements OnSharedPreferenceChangeListener, OnChannelChang
 		Enumeration<String> e = mDevices.keys();
 		while (e.hasMoreElements()) {
 			String key = e.nextElement();
-			IActuator ac = (IActuator) mDevices.get(key);
+			IActuator ac = mDevices.get(key);
 			if (ac instanceof VdrDevice) {
 				list.add(ac.getName());
 			}

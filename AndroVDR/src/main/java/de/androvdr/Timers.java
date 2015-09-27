@@ -20,18 +20,18 @@
 
 package de.androvdr;
 
+import org.hampelratte.svdrp.Command;
+import org.hampelratte.svdrp.Response;
+import org.hampelratte.svdrp.commands.LSTT;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.StringTokenizer;
-
-import org.hampelratte.svdrp.Command;
-import org.hampelratte.svdrp.Response;
-import org.hampelratte.svdrp.commands.LSTT;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import de.androvdr.svdrp.VDRConnection;
 
@@ -162,7 +162,7 @@ public class Timers {
 					logger.error("Invalid epgsearch setp response", e);
 					continue;
 				}
-			};
+			}
 
 			for (Timer timer : mItems) {
 				timer.start += marginStart;

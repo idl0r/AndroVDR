@@ -2,9 +2,9 @@ package de.androvdr;
 
 
 public interface IFileLogger {
-	public String getLogFileName();
-	public void setLogFileName(String logFileName);
-	public int getLogLevel();
-	public void setLogLevel(int loglevel);
-	public void initLogFile(String logFileName, boolean append);
+	String getLogFileName();
+	void setLogFileName(String logFileName);
+	int getLogLevel();
+	void setLogLevel(int loglevel);
+	void initLogFile(String logFileName, boolean append);
 }

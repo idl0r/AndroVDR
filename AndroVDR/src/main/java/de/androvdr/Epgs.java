@@ -20,15 +20,15 @@
 
 package de.androvdr;
 
+import org.hampelratte.svdrp.Response;
+import org.hampelratte.svdrp.commands.LSTE;
+import org.hampelratte.svdrp.parsers.EPGParser;
+import org.hampelratte.svdrp.responses.highlevel.EPGEntry;
+import org.hampelratte.svdrp.responses.highlevel.Stream;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.hampelratte.svdrp.Response;
-import org.hampelratte.svdrp.commands.LSTE;
-import org.hampelratte.svdrp.responses.highlevel.EPGEntry;
-import org.hampelratte.svdrp.responses.highlevel.Stream;
-import org.hampelratte.svdrp.parsers.EPGParser;
 
 import de.androvdr.svdrp.VDRConnection;
 
@@ -166,5 +166,5 @@ public class Epgs {
 	
 	public class NoScheduleException extends Exception {
 		private static final long serialVersionUID = 1L;
-	};
+	}
 }

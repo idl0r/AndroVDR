@@ -1,9 +1,9 @@
 package de.androvdr;
 
-import java.lang.reflect.Field;
-
 import android.util.TypedValue;
 import android.widget.TextView;
+
+import java.lang.reflect.Field;
 
 public abstract class AbstractViewHolder {
 

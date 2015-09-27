@@ -23,8 +23,9 @@ package de.androvdr;
 import android.app.Application;
 import android.content.Context;
 
-import org.acra.*;
-import org.acra.annotation.*;
+import org.acra.ACRA;
+import org.acra.ReportingInteractionMode;
+import org.acra.annotation.ReportsCrashes;
 
 @ReportsCrashes(
         mode = ReportingInteractionMode.NOTIFICATION,

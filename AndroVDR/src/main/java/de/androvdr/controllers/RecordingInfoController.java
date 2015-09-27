@@ -20,21 +20,22 @@
 
 package de.androvdr.controllers;
 
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Formatter;
-import java.util.GregorianCalendar;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import android.os.Handler;
 import android.os.Message;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Formatter;
+import java.util.GregorianCalendar;
+
 import de.androvdr.Messages;
 import de.androvdr.Preferences;
 import de.androvdr.R;
